@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css">
+    <link rel="stylesheet" href="styles/shared/footer.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout.css">
+  </head>
+  <body>
+    <div class="checkout-header">
+      <div class="header-content">
+        <div class="checkout-header-left-section">
+          <a href="amazon.html">
+            <img class="amazon-logo" src="images/amazon-logo.png">
+            <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png">
+          </a>
+        </div>
+
+        <div class="checkout-header-middle-section">
+          Checkout (<a class="return-to-home-link js-return-to-home-link"
+            href="amazon.html"></a>)
+        </div>
+
+        <div class="checkout-header-right-section">
+          <img src="images/icons/checkout-lock-icon.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="page-title">Review your order</div>
+
+      <div class="checkout-grid">
+        <div class="order-summary js-order-summary"> 
+        </div>
+
+        <div class="payment-summary js-payment-summary">
+          
+        </div>
+      </div>
+    </div>
+
+    <footer class="amazon-footer">
+      <button class="back-to-top-button" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        Back to top
+      </button>
+
+      <div class="footer-links-section">
+        <div class="footer-column">
+          <div class="footer-column-title">Get to Know Us</div>
+          <a href="#" class="footer-link">Careers</a>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="#" class="footer-link">About Amazon</a>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Make Money with Us</div>
+          <a href="#" class="footer-link">Sell products on Amazon</a>
+          <a href="#" class="footer-link">Become an Affiliate</a>
+          <a href="#" class="footer-link">Advertise Your Products</a>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Amazon Payment Products</div>
+          <a href="#" class="footer-link">Shop with Points</a>
+          <a href="#" class="footer-link">Reload Your Balance</a>
+        </div>
+        <div class="footer-column">
+          <div class="footer-column-title">Let Us Help You</div>
+          <a href="orders.html" class="footer-link">Your Orders</a>
+          <a href="#" class="footer-link">Returns &amp; Replacements</a>
+          <a href="#" class="footer-link">Help</a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-section">
+        <img class="footer-logo" src="images/amazon-logo-white.png">
+        <div class="footer-bottom-links">
+          <button class="footer-bottom-button">🌐 English</button>
+          <button class="footer-bottom-button">United States</button>
+        </div>
+        <div class="footer-copyright">
+          &copy; <span class="js-footer-year"></span> Amazon Clone Project — practice project, not affiliated with Amazon.com, Inc.
+        </div>
+      </div>
+    </footer>
+
+     <script>
+      document.querySelector('.js-footer-year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script> -->
+
+    <script type="module" src="scripts/checkout.js"></script>
+
+  </body>
+</html>
