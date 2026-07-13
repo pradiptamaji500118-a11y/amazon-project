@@ -13,6 +13,12 @@
   margin-right: auto;
 }
 
+@media (max-width: 600px) {
+  .main {
+    margin-top: 145px;
+  }
+}
+
 .back-to-orders-link {
   display: inline-block;
   margin-bottom: 30px;
